@@ -14,6 +14,7 @@ watch      = require 'gulp-watch'
 #############
 JS_PATH     = 'app/assets/javascripts/'
 CSS_PATH    = 'app/assets/stylesheets/'
+HTML_PATH   = 'app/'
 CONFIG_PATH = './config.rb'
 
 #############
@@ -43,6 +44,10 @@ gulp.task 'lint', ->
     .pipe coffeelint()
     .pipe coffeelint.reporter()
 
+gulp.task 'html', ->
+  gulp.src ["#{HTML_PATH}*.html"]
+    .pipe connect.reload()
+
 gulp.task 'coffee', ->
   gulp.src ["#{JS_PATH}*.coffee"]
     .pipe coffee()
@@ -58,6 +63,7 @@ gulp.task 'compass', ->
     .pipe connect.reload()
 
 gulp.task 'watch', ->
+  gulp.watch ["#{HTML_PATH}*.html"], ['html']
   gulp.watch ["#{JS_PATH}*.coffee"], ['coffee']
   gulp.watch ["#{CSS_PATH}*.sass"], ['compass']
 
