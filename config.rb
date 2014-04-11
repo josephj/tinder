@@ -1,11 +1,11 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "/"
-css_dir = "app/stylesheets"
-sass_dir = "app/stylesheets"
-images_dir = "app/images"
-javascripts_dir = "app/javascripts"
+http_path = "app"
+css_dir = "app/assets/stylesheets"
+sass_dir = "app/assets/stylesheets"
+images_dir = "app/assets/images"
+javascripts_dir = "app/assets/javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :expanded

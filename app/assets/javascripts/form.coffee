@@ -1,1 +1,2 @@
-alert 'hello4!'
+console.log 'form.js is executed!'
+
