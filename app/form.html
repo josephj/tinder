@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Form</title>
-<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/stylesheets/base.css">
-<link rel="stylesheet" href="assets/stylesheets/form.css">
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h1>Form</h1>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/base.css">
+    <link rel="stylesheet" href="assets/stylesheets/form.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Form</h1>
 
-        <form role="form">
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password">
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Check me out
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+          <form role="form" id="form">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
 
+        </div>
       </div>
     </div>
-  </div>
-  <script src="components/jquery/dist/jquery.min.js"></script>
-  <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="assets/javascripts/form.js"></script>
-</body>
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/javascripts/form.js"></script>
+  </body>
 </html>
