@@ -13,6 +13,7 @@
     "gulp-compass": "^1.1.8",
     "gulp-connect": "^2.0.5",
     "gulp-livereload": "^1.2.0",
+    "gulp-open": "^0.2.8",
     "gulp-watch": "^0.5.3"
   }
 }

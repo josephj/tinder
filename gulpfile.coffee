@@ -7,6 +7,7 @@ coffeelint = require 'gulp-coffeelint'
 compass    = require 'gulp-compass'
 connect    = require 'gulp-connect'
 livereload = require 'gulp-livereload'
+open       = require 'gulp-open'
 watch      = require 'gulp-watch'
 
 #############
@@ -32,12 +33,9 @@ gulp.task 'connect', ->
     port: 8000
     livereload:
       port: 35788
-    #assets = require 'connect-assets'
-    #middleware: (connect, opt) ->
-      #middleware = []
-      #middleware.push assets(src: 'app/assets')
-      #middleware.push jade(src: 'app/views', dest: 'app/public', pretty: false)
-      #return middleware
+  options = url: 'http://localhost:8000/demo.html'
+  gulp.src './app/demo.html'
+    .pipe open('', options)
 
 gulp.task 'lint', ->
   gulp.src ['./**/*.coffee', '!./node_modules/**', '!./public/components/**']
