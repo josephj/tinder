@@ -9,8 +9,9 @@ A convenient tool which helps me to create prototype rapidly.
 wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh | sh
 ```
 
-## Development
+This will automatically create a folder with random name. 
 
-1. Go to the directory you have tinder installed.
-1. Start webserver by executing `gulp server`.
+1. Go into the folder.
+2. Start webserver by executing `gulp server`.
+3. Do some modification in another window or tab. `vim app/demo.html`
 
