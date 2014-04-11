@@ -1,8 +1,6 @@
 #####################
 # Required Packages
 #####################
-assets     = require 'connect-assets'
-jade       = require 'connect-jade-html'
 gulp       = require 'gulp'
 coffee     = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
@@ -33,6 +31,7 @@ gulp.task 'connect', ->
     port: 8000
     livereload:
       port: 35788
+    #assets = require 'connect-assets'
     #middleware: (connect, opt) ->
       #middleware = []
       #middleware.push assets(src: 'app/assets')

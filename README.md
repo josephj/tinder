@@ -1,6 +1,19 @@
-Job Seekr
+Tinder
 ---------
 
-![CodeShip](https://www.codeship.io/projects/513749b0-897f-0131-31f6-1e5e8ee087c4/status)
-[![Code Climate](https://codeclimate.com/repos/531c0884e30ba01029002c15/badges/959ebd6dcdfc85e585ff/gpa.png)](https://codeclimate.com/repos/531c0884e30ba01029002c15/feed)
+A convenient tool which helps me to create prototype rapidly.
+
+## Why not?
+
+There are several existed tools which facilitates developer to create prototype.
+Why not just use these tools?
+
+* `Yeoman`: It contains too many things which are not necessary.
+* `Fire.app`: I dislike GUI. CLI is awesome!
+
+## Installation
+
+```
+wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh
+```
 
