@@ -12,5 +12,5 @@ wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh | s
 ## Development
 
 1. Go to the directory you have tinder installed.
-1. Start webserver by executing `npm start`.
+1. Start webserver by executing `gulp server`.
 
