@@ -1,0 +1,41 @@
+body {
+  background: #f3f3f3;
+  color: #333333;
+  font: 14px/1.4 "Avenir Next", "Lato", "PT Sans", "DejaVu Sans", "Bitstream Vera Sans", Verdana, sans-serif;
+  padding: 20px 0;
+}
+
+a:link, a:visited {
+  color: #333333;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  color: white;
+  background: rgba(228, 63, 123, 0.8);
+}
+
+::selection {
+  color: white;
+  background: rgba(228, 63, 123, 0.8);
+}
+
+body > .container {
+  padding: 0 0 20px;
+  background: white;
+  min-height: 500px;
+}

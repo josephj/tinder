@@ -1,0 +1,26 @@
+{
+  "name": "tinder",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "express": "~3.4.8",
+    "morgan": "~1.0.0",
+    "node-compass": "0.2.3",
+    "static-favicon": "~1.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp-coffee": "^1.4.1",
+    "gulp-coffeelint": "^0.3.1",
+    "gulp-compass": "^1.1.8",
+    "gulp-connect": "^2.0.5",
+    "gulp-livereload": "^1.2.0",
+    "gulp-watch": "^0.5.3"
+  }
+}
