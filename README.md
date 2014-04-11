@@ -17,4 +17,4 @@ wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh | s
 2. Start webserver by executing `gulp server`.
 3. Do some modification in another window or tab. `vim app/demo.html`
 
-All the `*.coffee`, `*.sass`, and `*.html` files are watched by `gulp server`. With `LiveReload` installed, your pages will be refreshed automatically while you have any modifications to these 3 file types. 
+All the `*.coffee`, `*.sass`, and `*.html` files are watched by `gulp server`. Taking the advatage of `LiveReload`, your pages will be refreshed automatically while you have any modifications to these 3 file types. 
