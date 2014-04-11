@@ -3,6 +3,8 @@ Tinder
 
 A convenient tool which helps me to create prototype rapidly.
 
+![](http://d.pr/i/eQuc+)
+
 ## Installation
 
 ```
