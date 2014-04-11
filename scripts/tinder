@@ -1,0 +1,28 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]
+  then
+    echo "[tinder] ERROR - Target folder name is required!"
+    exit 1
+fi
+
+if [ -e $1 ]
+  then
+    echo "[tinder] ERROR - Target folder exists!"
+    exit 1
+fi
+
+cp -r /Users/$USER/Repos/tinder "$1"
+
+rm -rf "$1/.git"
+cd $1
+git init .
+git add .
+git commit -m "Initial commit"
+lsof -i tcp:8000 | awk 'NR!=1 {print $2}' | xargs kill
+
+echo "\n[tinder] Your tinder is ready. Please get some fire by executing the following commands."
+echo "---------------------------------------------------------------------------------------------"
+echo "cd $1; tinder_tmux $1; tmux a -t $1;"
+echo "---------------------------------------------------------------------------------------------"
+

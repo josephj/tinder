@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]
+  then
+    echo "[tinder] ERROR - Target window name is required!"
+    exit 1
+fi
+
+tmux -2 new -d -s $1
+tmux rename-window -t $1:1 'editor'
+tmux send-keys -t $1:1 'vim -p app/demo.html app/stylesheets/demo.sass app/javascripts/demo.coffee; clear' C-m
+tmux new-window -t $1:2 -n 'server' 'gulp server'
+tmux select-window -t $1:1
