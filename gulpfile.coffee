@@ -1,6 +1,8 @@
 #####################
 # Required Packages
 #####################
+assets     = require 'connect-assets'
+jade       = require 'connect-jade-html'
 gulp       = require 'gulp'
 coffee     = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
@@ -12,8 +14,8 @@ watch      = require 'gulp-watch'
 #############
 # Constants
 #############
-JS_PATH     = 'app/javascripts/'
-CSS_PATH    = 'app/stylesheets/'
+JS_PATH     = 'app/assets/javascripts/'
+CSS_PATH    = 'app/assets/stylesheets/'
 CONFIG_PATH = './config.rb'
 
 #############
@@ -27,10 +29,15 @@ gulp.task 'build', ->
 
 gulp.task 'connect', ->
   connect.server
-    root: 'app',
-    port: 8000,
+    root: 'app'
+    port: 8000
     livereload:
       port: 35788
+    #middleware: (connect, opt) ->
+      #middleware = []
+      #middleware.push assets(src: 'app/assets')
+      #middleware.push jade(src: 'app/views', dest: 'app/public', pretty: false)
+      #return middleware
 
 gulp.task 'lint', ->
   gulp.src ['./**/*.coffee', '!./node_modules/**', '!./public/components/**']
@@ -44,7 +51,7 @@ gulp.task 'coffee', ->
     .pipe connect.reload()
 
 gulp.task 'compass', ->
-  gulp.src ["#{CSS_PATH}/*.sass"]
+  gulp.src ["#{CSS_PATH}*.sass"]
     .pipe compass
       config_file: CONFIG_PATH
       css: CSS_PATH

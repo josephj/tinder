@@ -1,4 +1,4 @@
 (function() {
-  alert('hihi');
+  alert('hello4!');
 
 }).call(this);
