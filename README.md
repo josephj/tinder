@@ -3,7 +3,7 @@ Tinder
 
 A convenient tool which helps me to create prototype rapidly.
 
-<img src="http://d.pr/i/V750+" width="250">
+![](http://d.pr/i/sqFY+)
 
 ## Installation
 
