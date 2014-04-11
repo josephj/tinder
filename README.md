@@ -3,17 +3,14 @@ Tinder
 
 A convenient tool which helps me to create prototype rapidly.
 
-## Why not?
-
-There are several existed tools which facilitates developer to create prototype.
-Why not just use these tools?
-
-* `Yeoman`: It contains too many things which are not necessary.
-* `Fire.app`: I dislike GUI. CLI is awesome!
-
 ## Installation
 
 ```
-wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh
+wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh | sh
 ```
+
+## Development
+
+1. Go to the directory you have tinder installed.
+1. Start webserver by executing `npm start`.
 
