@@ -1,7 +1,16 @@
 {
   "name": "tinder",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
+  "description": "A convenient tool which helps me to create prototype rapidly.",
+  "author": "josephj6802@gmail.com",
+  "main": "./index.coffee",
+  "bin": {
+    "tinder": "./bin/tinder.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:josephj/tinder.git"
+  },
   "scripts": {
     "start": "gulp server"
   },
@@ -14,7 +23,11 @@
     "gulp-connect": "^2.0.5",
     "gulp-livereload": "^1.2.0",
     "gulp-open": "^0.2.8",
-    "gulp-watch": "^0.5.3",
+    "gulp-watch": "^0.5.3"
+  },
+  "dependencies": {
     "optimist": "^0.6.1"
+    "execSync": "^1.0.1-pre",
+    "ncp": "^0.5.0"
   }
 }

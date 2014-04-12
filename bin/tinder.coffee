@@ -8,19 +8,21 @@ tinder = require('../index.coffee')
 action = target = null
 
 argv = argv
-  .usage('Usage: tinder <action> <folder>, ex. tinder new foo')
+  .usage('Usage: tinder <action> [folder], ex. tinder new foo')
   .check (o) ->
     action = o._[0]
     target = o._[1]
-    if not action or not target
-      throw new Error 'You need to provide both <action> and <path>'
-    if fs.existsSync(target)
-      throw new Error 'You need to specify a non-existent folder'
+    throw new Error 'You need to provide action' unless action
+    if action is 'new'
+      throw new Error 'You need to specify target folder' unless target
+      throw new Error 'You need to specify a non-existent folder' if fs.existsSync(target)
   .argv
 
 switch action
   when 'new' then tinder.new(target)
-  when 'gist' then tinder.gist(target)
+  when 'server' then tinder.server()
+  when 'gist' then tinder.gist()
+  when 'codepen' then tinder.codepen()
   else
     throw new Error 'Invalid action.'
 
