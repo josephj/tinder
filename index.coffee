@@ -15,6 +15,7 @@ module.exports = do ->
           "rm -rf .git"
           "rm -rf bin"
           "rm -f index.coffee"
+          "mv package.json.sample package.json"
           'git init .'
           'git add .'
           'git commit -m "Initial commit"'

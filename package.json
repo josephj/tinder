@@ -14,8 +14,10 @@
   "scripts": {
     "start": "gulp server"
   },
-  "devDependencies": {
+  "dependencies": {
+    "bower": "^1.3.2",
     "coffee-script": "^1.7.1",
+    "execSync": "^1.0.1-pre",
     "gulp": "^3.6.0",
     "gulp-coffee": "^1.4.1",
     "gulp-coffeelint": "^0.3.1",
@@ -23,11 +25,9 @@
     "gulp-connect": "^2.0.5",
     "gulp-livereload": "^1.2.0",
     "gulp-open": "^0.2.8",
-    "gulp-watch": "^0.5.3"
-  },
-  "dependencies": {
+    "gulp-util": "^2.2.14",
+    "gulp-watch": "^0.5.3",
+    "ncp": "^0.5.0",
     "optimist": "^0.6.1"
-    "execSync": "^1.0.1-pre",
-    "ncp": "^0.5.0"
   }
 }

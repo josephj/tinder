@@ -12,7 +12,7 @@ You can install `tinder` by following steps.
 ```
 git clone git@github.com:josephj/tinder.git
 cd tinder
-npm install -g .
+npm install . -g
 ```
 
 Or use the install script which simplifies steps.
