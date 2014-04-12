@@ -11,5 +11,7 @@ cd -
 rm -rf "/tmp/$folder_name"
 
 echo "\ntinder has been installed. Please execute the following command."
+echo "----------------------------------------------------------------------------"
 echo "tinder new <project_name>"
+echo "----------------------------------------------------------------------------"
 
