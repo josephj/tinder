@@ -7,7 +7,7 @@ A convenient tool which helps me to create prototype rapidly.
 
 ## Installation
 
-By executing the following line, it will automatically create a folder with random name. 
+By executing the following line, it will automatically create a folder with random name.
 
 ```
 wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh | sh
@@ -17,8 +17,7 @@ wget -O - https://raw.githubusercontent.com/josephj/tinder/master/install.sh | s
 2. Start webserver by executing `gulp server`.
 3. Do some modification in another window or tab. `vim app/demo.html`
 
-All the `*.coffee`, `*.sass`, and `*.html` files are watched by `gulp server`. Taking the advantage of `LiveReload`, your pages will be refreshed automatically while you have any modifications to these 3 file types. 
-
+All the `*.coffee`, `*.sass`, and `*.html` files are watched by `gulp server`. Taking the advantage of `LiveReload`, your pages will be refreshed automatically while you have any modifications to these 3 file types.
 
 ## Todo
 
@@ -46,5 +45,6 @@ cd <folder>; tinder gist
 * codepen.io
 
 ```
-cd <folder>; tinder codepen 
+cd <folder>; tinder codepen
 ```
+

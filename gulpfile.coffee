@@ -6,7 +6,6 @@ coffee     = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
 compass    = require 'gulp-compass'
 connect    = require 'gulp-connect'
-livereload = require 'gulp-livereload'
 open       = require 'gulp-open'
 watch      = require 'gulp-watch'
 
