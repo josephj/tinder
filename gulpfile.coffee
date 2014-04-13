@@ -1,6 +1,7 @@
 #####################
 # Required Packages
 #####################
+args       = require('yargs').argv
 gulp       = require 'gulp'
 coffee     = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
@@ -27,12 +28,14 @@ gulp.task 'build', ->
     .pipe gulp.dest(JS_PATH)
 
 gulp.task 'connect', ->
-  connect.server
+  args.port ||= 8000
+  args.livereload || 35788
+  server = connect.server
     root: 'app'
-    port: 8000
+    port: args.port
     livereload:
-      port: 35788
-  options = url: 'http://localhost:8000/demo.html'
+      port: args.livereload
+  options = url: "http://localhost:#{args.port}/demo.html"
   gulp.src './app/demo.html'
     .pipe open('', options)
 
