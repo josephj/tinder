@@ -32,7 +32,7 @@ module.exports = do ->
         "lsof -i tcp:#{port} | awk 'NR!=1 {print $2}' | xargs kill"
         "tmux -2 new -d -s #{session}"
         "tmux rename-window -t #{session}:1 'editor'"
-        "tmux send-keys -t #{session}:1 'vim app/assets/stylesheets/demo.coffee -c \"vsp app/assets/javascripts/demo.html\" -c \"wincmd l\"  -c \"sp app/assets/javascripts/demo.sass\"' C-m"
+        "tmux send-keys -t #{session}:1 'vim app/assets/stylesheets/demo.sass -c \"vsp app/demo.html\" -c \"wincmd l\"  -c \"sp app/assets/javascripts/demo.coffee\"' C-m"
         "tmux new-window -t #{session}:2 -n 'server' 'gulp server --port=#{port}'"
         "tmux select-window -t #{session}:1"
       ].join(';') unless exist
